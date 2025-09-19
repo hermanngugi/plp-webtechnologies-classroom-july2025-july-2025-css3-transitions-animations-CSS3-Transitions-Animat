@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Interactive Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>👋 Hi, I'm Herman</h1>
+    <p>Aspiring Web Developer | Creative Thinker | Problem Solver</p>
+  </header>
+
+  <main>
+    <!-- Portfolio Section: Buttons & Box -->
+    <section class="portfolio-section">
+      <h2>🎨 Interactive Elements</h2>
+      <p>Hover and click the elements below to see transitions and animations in action.</p>
+      <button id="colorBtn">Click Me</button>
+      <div class="box" id="animateBox"></div>
+    </section>
+
+    <!-- Portfolio Section: Modal -->
+    <section class="portfolio-section">
+      <h2>📦 Modal Animation</h2>
+      <p>This modal uses CSS keyframes combined with JavaScript triggers.</p>
+      <button id="openModalBtn">Open Modal</button>
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <h3>Modal Title</h3>
+          <p>This is a smooth, animated modal powered by CSS + JS.</p>
+          <button id="closeModalBtn" class="close-btn">Close</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section: Functions -->
+    <section class="portfolio-section">
+      <h2>⚡ JavaScript Functions</h2>
+      <p>Functions demonstrate parameters, return values, and scope in action.</p>
+      <button onclick="showSum()">Calculate 12 + 8</button>
+      <p id="sumResult"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Herman | Built with ❤️ using HTML, CSS, and JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
