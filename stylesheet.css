@@ -1,0 +1,107 @@
+/* ====== Global Portfolio Styling ====== */
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #fafafa;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, teal, steelblue);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.portfolio-section {
+  background: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+  background: #222;
+  color: #ddd;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* ====== Buttons with Transitions ====== */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background: teal;
+  color: white;
+  transition: background-color 0.5s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: orange;
+  transform: scale(1.1);
+}
+
+/* ====== Animated Box ====== */
+.box {
+  width: 120px;
+  height: 120px;
+  margin: 20px auto;
+  background: steelblue;
+  border-radius: 10px;
+  transition: transform 0.8s ease, background-color 0.8s ease;
+}
+
+.box.animate {
+  transform: rotate(360deg) scale(1.3);
+  background-color: crimson;
+}
+
+/* ====== Modal Styling ====== */
+.modal {
+  display: none; /* hidden by default */
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 300px;
+  animation: slideIn 0.5s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.close-btn {
+  background: crimson;
+  margin-top: 15px;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-200px); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
